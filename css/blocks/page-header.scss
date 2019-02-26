@@ -7,7 +7,7 @@ page-header {
   height: 85px;
 }
 
-@media (min-width: $tabler-width) {
+@media (min-width: $tablet-width) {
   .page-header__logo {
     order: 2;
     height: 400px;
@@ -18,4 +18,12 @@ page-header {
   .page-header__logo {
     height: 648px;
   }
+}
+
+.page-header,
+.page-header__logo {
+  @include no-outline;
+}
+.page-header__logo {
+  background: rgba(255,255,255,0.5);
 }
