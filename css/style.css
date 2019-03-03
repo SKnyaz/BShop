@@ -172,16 +172,15 @@ img {
     z-index: 2;
     width: 7px;
     height: 100%;
-    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4); } }
-
-.main-nav--nojs .main-nav__toggle {
-  display: none; }
+    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4); }
+  .main-nav--nojs .main-nav__toggle {
+    display: none; } }
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0; }
 
-.main-nav--nojs .site-list {
+.main-nav--nojs .site-list__item {
   display: block; }
 
 .main-nav--nojs .site-list__item--active a {
@@ -308,7 +307,7 @@ img {
       right: 30px;
       left: 30px; }
   .site-list__item a {
-    padding-right: 30px;
+    padding-right: 31px;
     padding-left: 31px; }
   .site-list__item a[href]:hover {
     color: #000000;
@@ -320,3 +319,74 @@ img {
 
 .site-list {
   width: 780px; }
+
+.user-list__login {
+  position: relative;
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none; }
+
+.user-list__login-icon {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3; }
+  .user-list__login-icon polygon {
+    fill: #ffffff; }
+
+@media (min-width: 768px) {
+  .user-list {
+    width: 60px; }
+  .user-list__login {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+    font-size: 0; }
+    .user-list__login:hover .user-list__login-icon {
+      opacity: 1; }
+      .user-list__login:hover .user-list__login-icon polygon {
+        fill: #826550; }
+    .user-list__login:active .user-list__login-icon {
+      opacity: 0.3; }
+      .user-list__login:active .user-list__login-icon polygon {
+        fill: #ffffff; }
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px; } }
+
+@media (min-width: 1200px) {
+  .user-list {
+    width: auto;
+    max-width: 160px; }
+  .user-list__login {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .user-list__login:hover {
+      color: #000000;
+      background-color: #ffffff; }
+    .user-list__login:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #ffffff; }
+    .user-list__login:hover .user-list__login-icon {
+      opacity: 0.3; }
+      .user-list__login:hover .user-list__login-icon polygon {
+        fill: #000000; }
+    .user-list__login:active .user-list__login-icon {
+      opacity: 0.1; }
+  .user-list__login-icon {
+    left: 15px; } }
