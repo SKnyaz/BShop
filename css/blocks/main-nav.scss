@@ -1,9 +1,9 @@
 .main-nav {
   position: relative;
 
-  width: 320px; //auto
+  width: auto; //width: 320px;
   min-height: 51px;
-  margin: 0 auto;
+  //margin: 0 auto;
 
   background-color: #826550;
 }
@@ -173,7 +173,9 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 640px;
+
+  width: 84%; //width: 640px; //640px/768px = 84%
+  max-width: 960px; //960px/.84 = 1142px
   margin: 0 auto;
 }
 
@@ -184,6 +186,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 960px;
+    //width: 960px;
   }
 }
